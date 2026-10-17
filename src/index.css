@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --blush:#FFE4EC; --rose:#FF6F91; --deep-pink:#E84373; --rose-gold:#C08081; --burgundy:#590D22; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family:'Lato',sans-serif; overflow-x:hidden; background-color:#fff5f8; }
+.font-cursive { font-family:'Great Vibes',cursive; }
+.font-serif-elegant { font-family:'Cormorant Garamond',serif; }
+.font-body { font-family:'Lato',sans-serif; }
+.glass-card { background:rgba(255,255,255,.7); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(192,128,129,.3); }
+::-webkit-scrollbar { width:6px; }
+::-webkit-scrollbar-track { background:#ffe4ec; }
+::-webkit-scrollbar-thumb { background:#ff6f91; border-radius:3px; }
+:focus-visible { outline:2px solid #E84373; outline-offset:2px; }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
+@layer utilities { .text-shadow-glow { text-shadow:0 0 30px rgba(232,67,115,.4),0 0 60px rgba(232,67,115,.2); } .box-glow { box-shadow:0 0 30px rgba(232,67,115,.25),0 0 60px rgba(232,67,115,.1); } .rose-gold-border { border:1.5px solid rgba(192,128,129,.6); } }
